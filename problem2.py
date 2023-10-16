@@ -26,3 +26,13 @@ word not in list
 
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
 
+print(fruit)
+userinput = input("Enter a word from the list: ")
+
+if userinput in fruit:
+    new_fruits = [fruit for fruit in fruit if fruit != userinput]
+    print(new_fruits)
+else:
+    fruit.append(userinput)
+    print(fruit)
+

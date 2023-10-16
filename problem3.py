@@ -23,5 +23,21 @@ Enter an integer:-1
 
 The largest number you entered is 92
 """
+integers = []
+for i in range(10):
+    userinput = input("Enter an integer:")
+    try:
+        num = int(userinput)
+        if num == -1:
+            break
+        elif num > 0:
+            integers.append(num)
+        else:
+            print("Invalid input. Please enter a positive integer or -1 to stop.")
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
+        continue
 
+max_int = max(integers)
 
+print(f"The largest number you entered is {max_int}")
