@@ -1,0 +1,1 @@
+chairs = ['Anson','Max','Wesley']
