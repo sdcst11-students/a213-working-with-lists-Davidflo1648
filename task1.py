@@ -21,7 +21,16 @@ example:
 Enter the index for an animal:2
 The animal at that index is Dog
 """
+animals = ["cat", "fish", "dog", "bear", "turtle"]
 
+animals.sort()
 
+print(animals)
 
-animals =
+index = int(input("Enter the index for an animal: "))
+
+if 0 <= index <= 4:
+    print(animals[index])
+else:
+    print("Invalid number")
+
